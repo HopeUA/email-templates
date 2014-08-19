@@ -11,6 +11,15 @@
             text-decoration: none;
             -ms-interpolation-mode: bicubic;
         }
+        .anons-image-wide {
+            width: 600px;
+            height: 200px;
+
+            display: block;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
     </style>
 </head>
 <body>
@@ -146,7 +155,7 @@
 </table>
 
 <!--//////////////////////////////--FIRST_ITEM--//////////////////////////////-->
-
+<div mc:repeatable="first-anons-item" mc:variant="Анонс. Фото зліва. Початок">
 <table width="600" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f1f1f1">
     <tbody>
         <tr>
@@ -229,6 +238,54 @@
         </tr>
     </tbody>
 </table>
+</div>
+<!--//////////////////////////////--FIRST_CENTERED_ITEM--//////////////////////////////-->
+
+<div mc:repeatable="first-anons-item" mc:variant="Великий анонс. Початок">
+<table width="600" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f1f1f1">
+    <tbody>
+        <tr>
+            <td width="600" valign="top" align="center">
+                <table width="500" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f1f1f1">
+                    <tr>
+                        <td align="center">
+                            <span mc:edit="first-anons-link" style="font-weight: normal; font-size: 20px; line-height: 26px; color: #979797; font-family: helvetica, arial, sans-serif;">
+                                <a href="#" style="text-decoration: underline; color: #2554c8;">
+                                    Дуже цікавий анонс
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="10"></td>
+        </tr>
+        <tr>
+            <td width="600" valign="top" align="center">
+                <img mc:edit="first-anons-image" class="anons-image-wide" src="http://cdn.hope.ua/web/email-templates/anons-ua/nophoto-wide.jpg" border="0">
+            </td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+        </tr>
+        <tr>
+            <td width="600" valign="top" align="center">
+                <table width="500" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f1f1f1">
+                    <tr>
+                        <td>
+                            <span mc:edit="first-anons-text" style="font-weight: normal; font-size: 14px; line-height: 20px; color: #77787b; font-family: arial, helvetica, sans-serif;">
+                                Невеличкий опис, що містить багато цікавої інформації. Виникає велике бажання натиснути на посилання і перейти по ньому...
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
 
 <!--//////////////////////////////--RIGHT_ITEM--//////////////////////////////-->
 
@@ -647,6 +704,74 @@
                                 <td valign="top" bgcolor="#f1f1f1" align="center" height="18" style="font-size:0; line-height:0;">.&nbsp;</td>
                             </tr></tbody>
                             </table>
+                            <span mc:edit="anons-text" style="font-weight: normal; font-size: 14px; line-height: 20px; color: #77787b; font-family: arial, helvetica, sans-serif;">
+                                Невеличкий опис, що містить багато цікавої інформації. Виникає велике бажання натиснути на посилання і перейти по ньому...
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<!--//////////////////////////////--CENTERED_ITEM--//////////////////////////////-->
+
+<div mc:repeatable="anons-item" mc:variant="Великий анонс">
+<table width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr>
+    <td valign="top" bgcolor="#f1f1f1" align="center" height="27" style="font-size:0; line-height:0;">.&nbsp;</td>
+</tr></tbody>
+</table>
+
+<table width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr>
+    <td valign="top" bgcolor="#f1f1f1" align="center" height="12" style="font-size:0; line-height:0;">
+        <img width="600" height="12" border="0" style="display:block; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;" src="http://cdn.hope.ua/web/email-templates/anons-ua/separator.jpg" alt="">
+    </td>
+</tr></tbody>
+</table>
+
+<table width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr>
+    <td valign="top" bgcolor="#f1f1f1" align="center" height="34" style="font-size:0; line-height:0;">.&nbsp;</td>
+</tr></tbody>
+</table>
+
+<table width="600" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f1f1f1">
+    <tbody>
+        <tr>
+            <td width="600" valign="top" align="center">
+                <table width="500" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f1f1f1">
+                    <tr>
+                        <td align="center">
+                            <span mc:edit="anons-link" style="font-weight: normal; font-size: 20px; line-height: 26px; color: #979797; font-family: helvetica, arial, sans-serif;">
+                                <a href="#" style="text-decoration: underline; color: #2554c8;">
+                                    Дуже цікавий анонс
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="10"></td>
+        </tr>
+        <tr>
+            <td width="600" valign="top" align="center">
+                <img mc:edit="anons-image" class="anons-image-wide" src="http://cdn.hope.ua/web/email-templates/anons-ua/nophoto-wide.jpg" border="0">
+            </td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+        </tr>
+        <tr>
+            <td width="600" valign="top" align="center">
+                <table width="500" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f1f1f1">
+                    <tr>
+                        <td>
                             <span mc:edit="anons-text" style="font-weight: normal; font-size: 14px; line-height: 20px; color: #77787b; font-family: arial, helvetica, sans-serif;">
                                 Невеличкий опис, що містить багато цікавої інформації. Виникає велике бажання натиснути на посилання і перейти по ньому...
                             </span>
